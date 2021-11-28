@@ -18,6 +18,7 @@ const Routes = [
 	{
 		path: "/home",
 		name: "Home",
+		beforeEnter: isAuthenticated,
 		component: () => import(/* webpackChunkName: "home" */ "../views/Home")
 	}
 ]
