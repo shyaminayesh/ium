@@ -32,7 +32,7 @@ export default {
 
                     resolve(true)
 
-                }).catch(error => reject(error))
+                }).catch(() => reject(false))
 
             })
         }
