@@ -3,7 +3,9 @@ export default {
 
     state: {
         package: {
-            name: null
+            name: null,
+            limit: null,
+            unit: null
         }
     },
 
@@ -33,6 +35,8 @@ export default {
 
         set_package: (state, data) => {
             state.package.name = data.my_package_info.package_name
+            state.package.limit = data.my_package_summary.limit
+            state.package.unit = data.my_package_summary.volume_unit
         }
 
     }
