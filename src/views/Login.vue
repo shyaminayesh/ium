@@ -15,7 +15,7 @@
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <b-form-input v-model="field.password" type="text" class="form-control input-lg" :state="validation" placeholder="Password"></b-form-input>
+                        <b-form-input v-model="field.password" type="password" class="form-control input-lg" :state="validation" placeholder="Password"></b-form-input>
                     </div>
                 </div>
 
